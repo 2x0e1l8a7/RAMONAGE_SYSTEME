@@ -20,7 +20,7 @@ html {
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: "DM Sans", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   line-height: 1.55;
 }
 a {
@@ -166,7 +166,7 @@ h2 em {
   display: flex;
   font-size: 14px;
   gap: 12px;
-  margin-top: 66px;
+  margin-top: 50px;
 }
 .hero-note small {
   color: var(--muted);
@@ -762,9 +762,10 @@ textarea:focus {
 }
 .slider-track {
   display: flex;
-  transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .slide {
+  cursor: pointer;
   flex: 0 0 31%;
   margin-right: 3.5%;
   opacity: 0.46;
@@ -775,6 +776,11 @@ textarea:focus {
     transform 0.4s;
 }
 .slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.slide:hover,
+.slide:focus-visible {
   opacity: 1;
   transform: scale(1);
 }
@@ -838,7 +844,7 @@ textarea:focus {
 }
 .qualification-card p + p {
   color: #c9c6bd;
-  font-family: "DM Sans", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 14px;
   margin-top: 16px;
 }
